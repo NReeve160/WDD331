@@ -54,3 +54,9 @@ div {
     margin: .7em;
     box-shadow: 3px 3px 3px 3px #003155;
 }
+
+#headline-one {
+    background-color: #7FCC68;
+    max-width: 18%;
+    box-shadow: 3px 3px 3px 3px #003155;
+}
