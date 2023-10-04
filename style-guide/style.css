@@ -69,3 +69,25 @@ div {
 #p-to-upper {
     text-transform: uppercase;
 }
+
+div {
+    display: grid;
+}
+
+.small-wireframe {
+    background-image: url(small.png);
+    background-repeat: no-repeat;
+    width: 47%;
+    height: 450px;
+    border: solid black 1px;
+    justify-content: center;
+}
+
+.large-wireframe {
+    background-image: url(large.png);
+    background-repeat: no-repeat;
+    width: 48%;
+    height: 450px;
+    border: solid black 1px;
+    justify-content: center;
+}
