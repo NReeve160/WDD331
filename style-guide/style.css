@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+h1, h2, h3, #headlines{
+    font-family: 'Lumanosimo', cursive;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.colors {
+    display: grid;
+}
+
+.square {
+    width: 200px;
+    height: 150px;
+    border: solid black 1px;
+}
+
+#one, #two, #three, #four {
+    grid-row: 2;
+}
+
+#one {
+    background-color: #003155;
+}
+
+#two {
+    background-color: #0047AA;
+}
+
+#three {
+    background-color: #00CED1;
+}
+
+#four {
+    background-color: #000000;
+}
+
+main {
+    background-color: #0047AA;
+    padding: 2em;
+}
+
+div {
+    background-color: #00CED1;
+    padding: 1em;
+    margin: .7em;
+    box-shadow: 3px 3px 3px 3px #003155;
+}
