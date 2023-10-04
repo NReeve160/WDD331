@@ -60,3 +60,12 @@ div {
     max-width: 18%;
     box-shadow: 3px 3px 3px 3px #003155;
 }
+
+#headline-two {
+    color: #7FCC68;
+    font-size: xxx-large;
+}
+
+#p-to-upper {
+    text-transform: uppercase;
+}
