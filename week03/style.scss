@@ -1,0 +1,61 @@
+//colors
+$body-background-color: darkred;
+$form-background-color: #d6bb81;
+$input-color: white;
+$headlines-color : white;
+
+//set breakpoint sizes
+$break-small: 40em;
+$break-large: 60em;
+
+@mixin breakpoint($break) {
+@if $break == large {
+@media (max-width: $break-large) { @content; }
+}
+@else if $break == small {
+@media (max-width: $break-small) { @content; }
+} @else {
+@media ($break) { @content; }
+}
+}
+
+@mixin center($max-width, $width:"") {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @mixin flex-container($axis, $wrap: nowrap) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: $axis $wrap;
+    -ms-flex-flow: $axis $wrap;
+    flex-flow: $axis $wrap;
+} 
+
+h1 {
+    color: $headlines-color;
+    @include breakpoint(large) {text-align: left;}
+}
+  
+  body {
+    background: white;
+    @include breakpoint(large) { background: $body-background-color; }
+    @include breakpoint(small) { background: $body-background-color; }
+    @include center(50%, 70%);
+    } 
+
+form {
+    @include breakpoint(large) { background: $form-background-color; }
+    @include breakpoint(small) { background: $form-background-color; }
+    @include center(50%, 50%);
+    margin-right: 20em;
+}
+
+div {
+    padding-bottom: 10px;
+    text-align: right;
+}

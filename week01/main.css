@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    padding: .3em;
+}
+
+h1 {
+    color: #333;
+    font-family: 'Lora', serif;
+}
+
+h2 {
+    color: #333;
+    font-family: 'Lora', serif;
+}
+
+body a {
+    color: #666;
+}
+
+a, h2 a, a:visited {
+    color: #666;
+    text-decoration: none;
+}
+
+a:active {
+    color: #DEB887;
+}
+
+a:hover {
+    color: #00ddff
+}
+
+h1 a{
+    color: #333;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 400%;
+}
+
+header h1::after {
+    content: "\a";
+    white-space: pre;
+}
+
+header h1 a:active, header h1 a:hover, header h1 a:visited {
+    color: #333;
+}
+
+nav {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+nav li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #d0d0d0;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+
+nav ul {
+    padding-right: 10%;
+}
+
+nav ul li {
+    margin-bottom: 1em;
+    font-size: x-large;
+}
+
+header {
+    padding-bottom: 1em;
+}
+
+.post-date {
+    text-align: right;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #666;
+    margin-bottom: 2em;
+}
+
+article p {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+    header h1 {
+        font-size: 600%;
+    }
+
+    nav {
+        text-align: right;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    nav ul {
+        padding-right: 0;
+    }
+
+    nav ul li:first-child {
+        padding-right: 1em;
+    }
+
+    nav ul li:last-child {
+        padding-left: 1em;
+    }
+
+    nav ul li{
+        display: inline;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 26% 28% 28%;
+    }
+
+    article > .post-date {
+        grid-column: 1;
+    }
+
+    article > section {
+        grid-column: 2 / span 3;
+    }
+
+    .post-date {
+        border-bottom: none;
+    }
+
+    .post-content {
+    border-left: 1px solid #666;
+    }
+
+    article img {
+        margin-left: 25%;
+    }
+
+    article h2 {
+        margin: 1em;
+        font-size: xx-large;
+    }
+
+    article p {
+        padding: 1em;
+        font-size: large;
+    }
+}
