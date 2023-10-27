@@ -1,0 +1,3 @@
+.pulse-and-fade {
+    animation: pulse 500ms infinite, fade 500ms 8;
+}
