@@ -1,0 +1,11 @@
+.test {
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+  }
