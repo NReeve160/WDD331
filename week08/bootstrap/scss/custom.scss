@@ -21,3 +21,12 @@ $font-family-sans-serif: 'Poppins', sans-serif;
     background-color: pink url('../assets/abstract.jpg');
     background-size: cover;
 }
+
+.card {
+    border: none;
+    background-color: #2e2e2e;
+}
+
+.card-body p {
+    color: #c2c2c2;
+}

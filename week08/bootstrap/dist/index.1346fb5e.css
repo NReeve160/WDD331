@@ -13219,4 +13219,13 @@ textarea.form-control-lg {
   background-size: cover;
 }
 
+.card {
+  background-color: #2e2e2e;
+  border: none;
+}
+
+.card-body p {
+  color: #c2c2c2;
+}
+
 /*# sourceMappingURL=index.1346fb5e.css.map */
