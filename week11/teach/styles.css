@@ -24,3 +24,79 @@
     font-variation-settings: var(--mono), var(--casl), var(--wght), var(--slnt),
     var(--crsv);
 }
+
+body {
+    text-align: justify;
+    margin-left: 20em;
+    margin-right: 20em;
+    font-family: Recursive, sans-serif;
+    --wght: 'wght' 200;
+}
+
+.alert {
+    display: flex;
+    font-size: var(--s-1);
+}
+
+.alert h2 {
+    margin: 1em;
+    font-size: var(--s1);
+    --wght: "wght" 100;
+}
+
+.alert p {
+    font-size: var(--s-1);
+}
+
+.circle {
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 7px;
+    border-color: grey;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    transform: translate(25%, 40%);
+    opacity: 0.6;
+}
+
+.line {
+    display: inline-block;
+    width: 0px;
+    height: 60px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    position: absolute;
+    transform: translate(114px, 20%);
+}
+
+h1, h2 {
+    --wght: "wght" 600;
+    --mono: "MONO" 1.5;
+    margin-top: var(--s2);
+    margin-bottom: 0;
+}
+
+.tips {
+    margin: 2em;
+}
+
+#emphasis {
+    --wght: "wght" 400;
+}
+
+#triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid black;
+    padding-left: 1em;
+}
+
+#bold {
+    --wght: "wght" 500;
+}
